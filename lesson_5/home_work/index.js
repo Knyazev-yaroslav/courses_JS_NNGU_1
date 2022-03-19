@@ -51,7 +51,6 @@
 
 
 
-
 // 1
 
 // let myFunc = (number) => console.log(number**2)
@@ -130,20 +129,195 @@
 
 // 9 
 
-// let isNumberInRange = a => (a > 0 && a < 10) ? true : false
+// const isNumberInRange = a => (a > 0 && a < 10) ? true : false
 
-// const myArray = [1, 4, 6, 10, 32, 4, 5]
+// const myArray = [1, 2, 3 , 10, 30, 50 ]
 
-// let arrayReforge = (array, filteredArray) => {
-//     for (i = 0; i < (array.length); i++){
-//         if(isNumberInRange(array[i])){
+// const arrayReforge = (array, filterFunc) => {
+//     const filteredArray = []
+//     for (let i = 0; i < array.length; i++){
+//         if(filterFunc(array[i])){
 //             filteredArray.push(array[i]) 
 //         }
 //     }
+//     return filteredArray
 // }
 
-// let newArray = []
-// arrayReforge(myArray, newArray)
 
-// console.log(newArray)
+
+// console.log(arrayReforge(myArray,isNumberInRange))
+
+
+// const myMap = (array, func) => {
+//     const newArray = [];
+//     for(let i = 0; i < array.length; i++){
+//         newArray.push(func(array[i]))
+//     } return newArray
+// }
+
+
+// const myArray = [1, 2, 3, 4, 5];
+
+// console.log(myArray.reduce((prev, item) => prev + item))
+
+// const res = [43, 1, 2, 3, 4].reduce(function(previousValue, currentValue) {
+//     if (currentValue % 2 === 0) previousValue.even++;
+//     else previousValue.odd++;
+//     return previousValue ;
+// }, {even : 0, odd : 0});
+
+// console.log(res);
+
+
+// const myArray = [
+//     {serega : "horosh"},
+//     {serega : "ploh"},
+//     {sergey : "criganul"}
+// ];
+
+// let myValue = myArray.reduce(function(previousValue, currentValue){
+//     const myObj = {...previousValue, ...currentValue};
+//     return myObj
+// });
+
+// console.log(myValue)
+
+
+// const myArray = ['hello my dear friend', 'andrey52 52 52', '', 'sergey123']
+
+// console.log(myArray.flatMap(x => x.split('')))
+
+// const myArray =  [[1,2,3], [3,4,5],[6,7]]
+
+// const myFlatMap = (array, func) => {
+
+// }
+
+// const getDigitsSum = digit => {
+//     let sum = 0;    
+//     digit = String(digit);
+//     for (let i = 0; i < digit.length; i++){
+//         sum += +digit[i]
+//     }
+//     return sum
+// }
+
+
+// let iters = 0
+// for(let i = 0; i <=2020; i++){
+//     if(getDigitsSum(i) === 13){
+//         // console.log(i)
+//         iters += 1
+//     } 
+// }
+// console.log(iters)
+
+
+// Нужно сгенерировать массив рандомных чисел
+// Причем генерация рандомного числа должны быть отдельной функцией, принимающей промежуток, из которого взять рандомное число
+// Типа (min, max) => rand_number в интервале [min, max]**
+
+
+// function getRandomArbitrary(min, max) {
+//     return Math.random() * (max - min) + min;
+// }
+
+
+// function getRandomInt(min, max) {
+//     min = Math.ceil(min);
+//     max = Math.floor(max);
+//     return Math.floor(Math.random() * (max - min + 1)) + min; 
+// }
+
+// const getArray = (howMany, min, max) => {
+//     const myArray = [];
+//     for (let i = 0; i < howMany; i++){
+//         myArray.push(getRandomInt(min, max))
+//     }
+//     return myArray
+// }
+
+// const myNumb = getArray(10, 10, 50)
+// console.log(myNumb)
+
+// 12
+
+
+// const isEven = (number) => number % 2 === 0
+
+// console.log(isEven(11))
+
+// 13
+
+// const myArray = [10, 20, 3, 4, 8, 75];
+// const evenArray = [];
+// for(let i = 0; i < myArray.length; i++){
+//     if(isEven(myArray[i])) evenArray.push(myArray[i])
+// }
+
+// const myArray = [10, 20, 3, 4, 8, 75];
+// const result = myArray.filter(isEven)
+// console.log(result)
+
+// console.log(evenArray)
+
+// 14
+
+// const getDivisors = (number) =>{
+//     for(let i = 1; i <= number; i++){
+//         if (number % i === 0) console.log(i)
+//     }
+// }
+// getDivisors(10)
+
+// 15
+
+// let myFunc = (number) => {
+//     let myNumber = String(number)
+//     let myValue = 0
+//     for(let i = 0; i < myNumber.length; i++){
+//         myValue += +(myNumber[i])
+//     }
+//     return (myValue <= 9) ? myValue : myFunc(myValue) 
+// }
+
+// const myValue = 123432
+
+// console.log(myFunc(myValue))
+
+
+// 16
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const primeNumber = number => {
+    
+// }
+
+
+
+
 
