@@ -71,36 +71,36 @@
 
 // 4
 
-let myFunc = (dayNumber) => {
-    if(dayNumber >= 1 && dayNumber <= 7){
-        switch (dayNumber){
-            case 1:
-                console.log('Понедельник')
-                break
-            case 2:
-                console.log('Вторник')
-                break
-            case 3:
-                console.log('Среда')
-                break
-            case 4:
-                console.log('Четверг')
-                break
-            case 5:
-                console.log('Пятница')
-                break
-            case 6:
-                console.log('Суббота')
-                break
-            case 7:
-                console.log('Воскресенье')
-                break
-            default:
-                console.log('Введите число от 1 до 7')
-                break
-        }
-    } 
-}
+// let myFunc = (dayNumber) => {
+//     if(dayNumber >= 1 && dayNumber <= 7){
+//         switch (dayNumber){
+//             case 1:
+//                 console.log('Понедельник')
+//                 break
+//             case 2:
+//                 console.log('Вторник')
+//                 break
+//             case 3:
+//                 console.log('Среда')
+//                 break
+//             case 4:
+//                 console.log('Четверг')
+//                 break
+//             case 5:
+//                 console.log('Пятница')
+//                 break
+//             case 6:
+//                 console.log('Суббота')
+//                 break
+//             case 7:
+//                 console.log('Воскресенье')
+//                 break
+//             default:
+//                 console.log('Введите число от 1 до 7')
+//                 break
+//         }
+//     } 
+// }
 
 // myFunc(3)
 
@@ -175,7 +175,7 @@ let myFunc = (dayNumber) => {
 // const myArray = [
 //     {serega : "horosh"},
 //     {serega : "ploh"},
-//     {sergey : "criganul"}
+//     {sergey : "megahorosh"}
 // ];
 
 // let myValue = myArray.reduce(function(previousValue, currentValue){
@@ -196,6 +196,10 @@ let myFunc = (dayNumber) => {
 
 // }
 
+
+// 10 
+
+
 // const getDigitsSum = digit => {
 //     let sum = 0;    
 //     digit = String(digit);
@@ -205,6 +209,7 @@ let myFunc = (dayNumber) => {
 //     return sum
 // }
 
+//
 
 // let iters = 0
 // for(let i = 0; i <=2020; i++){
@@ -266,17 +271,20 @@ let myFunc = (dayNumber) => {
 
 // 14
 
-// const getDivisors = (number) =>{
-//     for(let i = 1; i <= number; i++){
-//         if (number % i === 0) console.log(i)
-//     }
-// }
-// getDivisors(10)
+const getDivisors = (number) =>{
+    const myArray = [];
+    for(let i = 1; i <= number; i++){
+        if (number % i === 0) myArray.push(i)
+    }
+    
+    return myArray
+}
+console.log(getDivisors(10))
 
 // 15
 
 // let myFunc = (number) => {
-//     let myNumber = String(number)
+//     let myNumber = number.toString()
 //     let myValue = 0
 //     for(let i = 0; i < myNumber.length; i++){
 //         myValue += +(myNumber[i])
