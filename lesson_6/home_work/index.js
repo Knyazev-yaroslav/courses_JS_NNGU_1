@@ -79,17 +79,7 @@
 
 // Напишите функцию removeChar(str), которая возвращает строку, очищенную от всех не буквенно-цифровых символов.
 
-// const removeChar = (str) => {
-//     const symbols = str.split('');
-//     for(let i = 0; i < symbols.length; i++){
-//         if(typeof(symbols[i]) != "string" && typeof(symbols[i]) != 'number'){
-//             symbols.splice(i, 1)
-//         }
-//     }
-//     return symbols.join('')
-// }
 
-// console.log(removeChar('Напишите функцию, которая возвращает строку, очищенную от всех не буквенно-цифровых символов.'))
 
 // 8 
 
