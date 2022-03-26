@@ -32,7 +32,7 @@
 //     for (let i = charValue - 1; i >= 0; i -= 1){
 //         reversedWord += polindrom[i]
 //     } 
-//     polindrom === reversedWord ? console.log("true") : console.log("false")
+//     polindrom === reversedWord ? console.log(true) : console.log(false)
 // }
 
 // const myWord = "серегаагерес"
@@ -43,7 +43,7 @@
 //     if (!(typeof polindrom === "string")) {
 //         return console.log("Это не слово")
 //     }
-//     (polindrom === polindrom.split("").reverse().join("")) ? console.log('true'):console.log('false')
+//     (polindrom === polindrom.split("").reverse().join("")) ? console.log(true):console.log(false)
 // }
 // const myWord = "серегаагерес"
 
@@ -271,20 +271,20 @@
 
 // 14
 
-const getDivisors = (number) =>{
-    const myArray = [];
-    for(let i = 1; i <= number; i++){
-        if (number % i === 0) myArray.push(i)
-    }
+// const getDivisors = (number) =>{
+//     const myArray = [];
+//     for(let i = 1; i <= number; i++){
+//         if (number % i === 0) myArray.push(i)
+//     }
     
-    return myArray
-}
-console.log(getDivisors(10))
+//     return myArray
+// }
+// console.log(getDivisors(10))
 
 // 15
 
-// let myFunc = (number) => {
-//     let myNumber = number.toString()
+// const myFunc = (number) => {
+//     const myNumber = number.toString()
 //     let myValue = 0
 //     for(let i = 0; i < myNumber.length; i++){
 //         myValue += +(myNumber[i])
@@ -292,9 +292,9 @@ console.log(getDivisors(10))
 //     return (myValue <= 9) ? myValue : myFunc(myValue) 
 // }
 
-// const myValue = 123432
+// const test = 123432
 
-// console.log(myFunc(myValue))
+// console.log(myFunc(test))
 
 
 // 16
