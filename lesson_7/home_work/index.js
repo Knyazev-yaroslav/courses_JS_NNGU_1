@@ -8,15 +8,15 @@
 // положительных элементов переданного массива.
 
 
-const evenPositiveSum = (array) =>{
-    const filteredArray = array.filter((element) => element % 2 === 0 && Math.sign(element) === 1)
-    const result = filteredArray.reduce((accum, current) => accum +current)
-    return result
-}
+// const evenPositiveSum = (array) =>{
+//     const filteredArray = array.filter((element) => element % 2 === 0 && Math.sign(element) === 1)
+//     const result = filteredArray.reduce((accum, current) => accum +current)
+//     return result
+// }
 
-const myArray = [1, 2, 3, 4, 5, -1, -5, -10, -12]
+// const myArray = [1, 2, 3, 4, 5, -1, -5, -10, -12]
 
-console.log(evenPositiveSum(myArray))
+// console.log(evenPositiveSum(myArray))
 
 // 2 
 
