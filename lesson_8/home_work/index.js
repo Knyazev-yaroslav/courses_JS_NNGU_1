@@ -6,10 +6,10 @@
 // работы таймера.
 
 // const timer = (start, end) => {
+//     console.log(start)
 //     --start
 //     if (start > end){
-//         console.log(start)
-//         return setTimeout(() => timer(start, end), 1000)
+//         setTimeout(() => timer(start, end), 1000)
 //     } else console.log(`на ${start} секунде таймер завершил работу`)
 // }
 
